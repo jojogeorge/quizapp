@@ -1,0 +1,84 @@
+#home {
+    background-image: url('../../assets/img/background.jpg');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    section {
+        background-color: rgba(0,0,0,0.7);
+        height:80%;
+        min-height: 400px;
+        min-width: 200px;
+        width:35%;
+        padding-left: $md;
+        padding-right: $md;
+    }
+    h1 {
+       text-align: center;
+       color: $off-white;
+       font-size: $lg;
+       font-weight: 400;
+
+    }
+    .cube {
+        text-align: center;
+    }
+    .play-button-container {
+        width:100%;
+    }
+    a.play-button {
+        background-color: $green;
+        color:#fff;
+        cursor: pointer;
+        padding: $normal;
+        display: block;
+        border-radius: $button-radius;
+        text-align:center;
+        transition: 0.3s linear all;
+
+    }
+    a.play-button:hover {
+        background-color: darken($green,10%);
+    }
+
+    .auth-container {
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top:$lg;
+    }
+    .auth-container .auth-buttons {
+        color:#fff;
+        cursor: pointer;
+        padding: $normal 0;
+        border-radius: $button-radius;
+        text-align: center;
+        width: 45%;
+        transition: 0.3s linear all;
+    }
+    #login-button {
+       background-color:$red; 
+
+    }
+    #login-button:hover {
+        background-color:darken($red,10%); 
+ 
+     }
+    #signup-button {
+        background-color: $blue; 
+     }
+     #signup-button:hover {
+        background-color: darken($blue,10%); 
+     }
+   @media(max-width: $md-breakpoint) {
+        #home section {
+            padding: 0 $normal;
+            width: 100%;
+            height: 100%;
+        }
+   }  
+}
+
+

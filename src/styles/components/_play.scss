@@ -1,0 +1,97 @@
+.questions {
+    background-color: $off-white;
+    border-left: 5px solid $blue;
+    margin: $lg auto 0 auto;
+    padding:$sm $md;
+    width:80%;
+    h2 {
+        text-align: center;
+        font-weight: linear;
+    }
+
+    .lifeline-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .lifeline {
+        position: relative;
+        top:-4px;
+    }
+    .lifeline-icon {
+        cursor: pointer;
+        color:$green;
+    }
+    .lifeline-icon:hover {
+        color:darken($orange,10%);
+        background: none;
+    }
+    h5 {
+        font-size: 1.3rem;
+        margin: $lg auto; 
+        text-align:center;
+        line-height:1.5;
+    }
+    .options-container{
+        display:inline-block;
+        width: 50%;
+    }
+    .option {
+        background-color: $blue;
+        border-radius: $button-radius;
+        cursor: pointer;
+        padding: $normal;
+        margin: $md auto;
+        transition: 0.3s linear all;
+        text-align: center;
+        color: $white;
+        width:90%;
+
+    }
+
+    .option:hover {
+        background-color: darken($blue,10%);
+    }
+
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    margin:0 auto $sm auto;
+    padding:$md;
+    
+}
+.button-container button {
+    color: $off-white;
+    border: none;
+    cursor: pointer;
+    font-family: $quicksand;
+    padding:$xs $sm;
+    margin: 0 $md;
+    
+}
+.button-container button:first-child {
+    background-color: darken($blue, 10%);
+    transition: 0.2s linear all;
+}
+.button-container button:first-child:hover {
+    background-color: darken($blue, 20%);
+}
+.button-container button:nth-child(2) {
+    background-color: darken($green, 10%);
+    transition: 0.2s linear all;
+}
+.button-container button:nth-child(2):hover {
+    background-color: darken($green, 20%);
+}
+.button-container button:last-child {
+    background-color: darken($red, 10%);
+    transition: 0.2s linear all;
+}
+.button-container button:last-child:hover {
+    background-color: darken($red, 20%);
+}
+
+.button-icon {
+    position: relative;
+    top:4px;
+}
